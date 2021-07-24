@@ -3,8 +3,8 @@ public class TPC09 {
 		int a = 56;
 		int b = 40;
 		
-		// sum ÇÔ¼ö¿¡ staticÀÌ ¾øÀ¸¹Ç·Î Å¬·¡½º °´Ã¼ »ı¼º
-		TPC09 tpc = new TPC09(); // Å¬·¡½º °´Ã¼¸¦ »ı¼ºÇÏ¿© heap Area¿¡ »ı¼º
+		// sum í•¨ìˆ˜ì— staticì´ ì—†ìœ¼ë¯€ë¡œ í´ë˜ìŠ¤ ê°ì²´ ìƒì„±
+		TPC09 tpc = new TPC09(); // í´ë˜ìŠ¤ ê°ì²´ë¥¼ ìƒì„±í•˜ì—¬ heap Areaì— ìƒì„±
 		
 		int v = tpc.sum(a, b); 
 		System.out.println(v);
