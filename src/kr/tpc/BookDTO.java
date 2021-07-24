@@ -12,4 +12,13 @@ public class BookDTO {
 		// 아무것도 안하는거 같지만 객체를 생성하는 작업을 함(기계어 코드)
 		// 위의 설계도 대로 객체를 기억공간에 만드는 작업
 	}
+
+	public BookDTO(String title, int price, String company, int page) {
+		this.title = title;
+		this.price = price;
+		this.company = company;
+		this.page = page;
+	}
+	
+	
 }
