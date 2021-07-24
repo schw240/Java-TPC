@@ -1,9 +1,26 @@
 package kr.tpc;
 
-// ì±…(Object) -> ì œëª©, ê°€ê²©, ì¶œíŒì‚¬, í˜ì´ì§€ìˆ˜
+// Ã¥(Object) -> Á¦¸ñ, °¡°İ, ÃâÆÇ»ç, ÆäÀÌÁö¼ö
 public class BookVO {
 	public String title;
 	public int price;
 	public String company;
 	public int page;
+	
+	// µğÆúÆ® »ı¼ºÀÚ ¸Ş¼­µå(»ı·«)
+	public BookVO() {// ÀÌ·± ¹æ½ÄÀº »ı¼º°ú µ¿½Ã¿¡ ÃÊ±âÈ­°¡ ÀÌ·ç¾îÁ® ¸ğµç °´Ã¼°¡ µ¿ÀÏÇÑ °ªÀ» °¡Áö°Ô µÇ¹Ç·Î ¾ÈÁÁÀº ¹æ¹ı
+		// ÃÊ±âÈ­ ÀÛ¾÷
+		this.title = "ÀÚ¹Ù"; // Á¤È®ÇÑ Ç¥ÇöÀ¸·Î´Â this¸¦ ¾Õ¿¡´Ù°¡ ³Ö¾îÁÖ¾î¾ßÇÔ ÇÏÁö¸¸ ¿©±â¼­´Â ¸Å°³º¯¼ö°¡ ¾ø¾î¼­ À§¿¡¼­ ÂüÁ¶ÇÏ±â ‹š¹®¿¡ ±¦ÂúÀ½
+		this.price = 14000;
+		company = "ÀÌÁö½º";
+		page = 780;
+	} // ´Ù¸¸ ±âº» »ı¼ºÀÚ´Â ¸¸µé¾îµÎ´Â °ÍÀÌ ÁÁÀ½
+	
+	// »ı¼ºÀÚ ¸Ş¼­µåÀÇ Áßº¹Á¤ÀÇ(overloading)
+	public BookVO(String title, int price, String company, int page) {
+		this.title = title; // this¸¦ ¾È³Ö¾îÁÖ¸é ¸â¹öº¯¼ö°¡ ¾Æ´Ñ À§ÀÇ ¸Å°³º¯¼ö·Î °ªÀÌ µé¾î°¡°ÔµÊ.
+		this.price = price;
+		this.company = company;
+		this.page = page;
+	}
 }
