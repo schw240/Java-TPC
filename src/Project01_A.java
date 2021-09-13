@@ -2,6 +2,7 @@ import java.awt.List;
 import java.util.ArrayList;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import kr.inflearn.BookDTO;;
 
@@ -31,6 +32,12 @@ public class Project01_A {
 		
 		String lstJson = g.toJson(lst);
 		System.out.println(lstJson);
-				
+		
+		
+		// JSON(String) -> Object(List<BookDTO>)
+		ArrayList<BookDTO> lst1 = g.fromJson(lstJson, new TypeToken<ArrayList<BookDTO>>() {}.getType());
+		for(BookDTO vo : lst1) {
+			System.out.println(vo);
+		}
 	}
 }
